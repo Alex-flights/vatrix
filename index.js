@@ -21,12 +21,12 @@ config({
 
 client.on("ready", () => {
     console.log(`I am online, my name is ${client.user.username}`); 
-    client.user.setGame(`Watching ${client.guilds.size} Servers`)
-client.user.setStatus("dnd")
+    client.user.setGame(`Help: a?help`)
+client.user.setStatus("online")
 });
 
 client.on("message", async message => {
-    const prefix = "n:"
+    const prefix = "a?"
 
     if(message.author.bot) return;
     if(!message.guild) return;
