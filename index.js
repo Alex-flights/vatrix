@@ -45,4 +45,4 @@ client.on("message", async message => {
         command.run(client, message, args);
 });
 
-client.login(process.BOT_TOKEN);
+client.login(process.env.BOT_TOKEN);
